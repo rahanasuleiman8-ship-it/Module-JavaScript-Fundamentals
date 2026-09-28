@@ -14,7 +14,9 @@
 
 //Explanation: Yes, my prediction was accurate. JavaScript threw a TypeError because '.slice()' is a string method 
 // Then try updating the expression last4Digits is assigned to, in order to get the correct value
-const cardNumber = '4533787178994213';
-const last4Digits = cardNumber.slice(-4);
+// Keep the original number value untouched
+const cardNumber = 4533787178994213;
+// Convert to string dynamically before slicing
+const last4Digits = cardNumber.toString().slice(-4);
 
-// console.log(last4Digits);
+console.log(last4Digits); // output 4213
