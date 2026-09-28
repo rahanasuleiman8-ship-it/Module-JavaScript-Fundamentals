@@ -6,7 +6,7 @@ const maximum = 100; // Sets the highest possible number that can be generated
 // Try breaking down the expression and using documentation to explain what it means
 // It will help to think about the order in which expressions are evaluated
 
-const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+const num = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum; // calculates the total count of all possible whole numbers between minimum and maximum.
 // Math.random() returns a random decimal between 0 and 1
 // Math.random() * maximum(100) returns a random decimal between 0 and 99.999  
 // Math.floor() rounds up the decimal to the nearest whole number
