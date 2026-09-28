@@ -25,10 +25,9 @@ console.log(result);
 //ANSWER: The expression movieLength % 60 uses the remainder (%) operator to calculate the number of seconds remaining that can't form a full seconds (8784 % 60 = 24 seconds)
 
 // d) Interpret line 4, what does the expression assigned to totalMinutes mean?
-// ANSWER: The expression assigned to totalMinutes means division
-
-// d) Interpret line 4, what does the expression assigned to totalMinutes mean?
-// ANSWER: It subtracts the remainder seconds from movieLength to get an exact multiple of 60, then divides by 60 to convert the seconds into whole minutes (146 minutes).
+// ANSWER: The expression `(movieLength - remainingSeconds) / 60` calculates the exact number of full minutes. 
+// First, `(movieLength - remainingSeconds)` subtracts the remaining seconds from the total seconds to leave a clean multiple of 60. 
+// Then, dividing that result by 60 converts those remaining seconds into whole minutes (8760 / 60 = 146 minutes).
 
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
 // ANSWER: A better name for the variable would be 'formattedDuration' because it clearly describes that the variable stores the movie duration in a formatted hours, minutes, and seconds format.
