@@ -5,7 +5,7 @@
 function formatAs12HourClock(time) {
   // Extract hours as a Number and minutes as a String
   const hours = Number(time.slice(0, 2));
-  const minutes = time.slice(3, 5);
+  const minutes = time.slice(-2);
 
   let formattedHours;
   let period;
