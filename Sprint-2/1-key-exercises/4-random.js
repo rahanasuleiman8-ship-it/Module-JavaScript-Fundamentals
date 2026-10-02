@@ -20,7 +20,7 @@ EXPLANATION IN ORDER OF EXECUTION (OPERATOR PRECEDENCE):
    calculates the total number of possible values between minimum and maximum, (but not including) 100 (e.g., 0 to 99.999...).
 
 4. Math.floor(...) — Function Call:
-   Rounds up the decimal to the nearest whole number, giving a whole number from 0 to 99.
+   Rounds the decimal down to the nearest whole integer, converting the range from [0, 99.999...] to an integer from 0 to 99.
 
 5. + minimum — Addition (Lowest Precedence):
    Shifts the whole set of numbers up so that the lowest outcome becomes `minimum` (1) instead of 0, resulting in a whole number between 1 and 100 inclusive.
